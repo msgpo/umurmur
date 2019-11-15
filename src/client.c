@@ -746,7 +746,7 @@ static bool_t checkDecrypt(client_t *client, const uint8_t *encrypted, uint8_t *
 	return false;
 }
 
-#define UDP_PACKET_SIZE 1024
+#define UDP_PACKET_SIZE 8192
 int Client_read_udp(int udpsock)
 {
 	int len;
